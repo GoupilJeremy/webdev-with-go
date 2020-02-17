@@ -9,6 +9,10 @@ type person struct {
 	lname string
 }
 
+func (p person) speak() {
+	fmt.Println(p.fname, `says, "Good morning, James."`)
+}
+
 func main() {
 	x := 7
 	fmt.Println(x)
@@ -27,6 +31,7 @@ func main() {
 		"Moneypenny",
 	}
 
-	fmt.Println(p1)
+	p1.speak()
+
 
 }
