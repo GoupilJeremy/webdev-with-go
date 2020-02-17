@@ -4,6 +4,11 @@ import "fmt"
 
 var x int
 
+type person struct {
+	fname string
+	lname string
+}
+
 func main() {
 	x := 7
 	fmt.Println(x)
@@ -16,5 +21,12 @@ func main() {
 		"Job":  42,
 	}
 	fmt.Println(m)
+
+	p1 := person{
+		"Miss",
+		"Moneypenny",
+	}
+
+	fmt.Println(p1)
 
 }
