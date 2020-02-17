@@ -22,6 +22,14 @@ func (sa secretAgent) speak() {
 	fmt.Println(sa.fname, sa.lname, `says, "Shaken, not stirred."`)
 }
 
+type human interface {
+	speak()
+}
+
+func saySomething(h human){
+	h.speak()
+}
+
 func main() {
 	x := 7
 	fmt.Println(x)
@@ -50,4 +58,6 @@ func main() {
 	}
 	sa1.speak()
 	sa1.person.speak()
+	saySomething(p1)
+	saySomething(sa1)
 }
