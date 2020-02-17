@@ -49,5 +49,5 @@ func main() {
 		licenseToKill: true,
 	}
 	sa1.speak()
-
+	sa1.person.speak()
 }
